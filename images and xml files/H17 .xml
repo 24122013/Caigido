@@ -1,0 +1,26 @@
+<annotation>
+	<folder>ALPR Test Image</folder>
+	<filename>H17 .jpg</filename>
+	<path>C:\Users\pc\Desktop\ALPR Test Image\H17 .jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>511</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>number_plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>82</xmin>
+			<ymin>367</ymin>
+			<xmax>417</xmax>
+			<ymax>462</ymax>
+		</bndbox>
+	</object>
+</annotation>
