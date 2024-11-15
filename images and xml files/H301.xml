@@ -1,0 +1,26 @@
+<annotation>
+	<folder>anh</folder>
+	<filename>H301.jpg</filename>
+	<path>C:\Users\LapTop\OneDrive - VNU-HCMUS\Documents\bso\anh\H301.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>472</width>
+		<height>303</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>number_plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>157</xmin>
+			<ymin>53</ymin>
+			<xmax>233</xmax>
+			<ymax>120</ymax>
+		</bndbox>
+	</object>
+</annotation>
