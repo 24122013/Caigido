@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AUTOMATIC VIETNAMESE LICENSE PLATE RECOGNITION</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background-color: #ffdce5; /* Màu hồng pastel nhạt */
+            color: #333;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .m {
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #ffb3c1; /* Màu hồng đậm hơn */
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .login {
+            position: absolute;
+            right: 20px;
+        }
+
+            .login button {
+                background-color: #ffc2d1; /* Màu hồng nhạt */
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 10px 20px;
+                color: #333;
+                transition: 0.3s background-color;
+            }
+
+                .login button:hover {
+                    background-color: #ff9ca9; /* Màu hồng đậm hơn khi hover */
+                }
+
+        .container-upload {
+            margin: 50px auto;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ffb3c1; /* Màu hồng đậm */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+            margin-top: 30px;
+        }
+
+            footer a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+        table {
+            font-family: Times New Roman;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            border-spacing: 100px;
+            background-color: #ffe5ec; /* Màu hồng nhạt */
+        }
+
+            table td {
+                display: inline-block;
+                vertical-align: top;
+                width: 48%;
+                padding-left: 80px;
+                margin: 0 10px;
+            }
+
+            table h3 {
+                font-size: 18px;
+                border-radius: 5px 5px 0 0;
+                font-family: sans-serif;
+                margin-top: 30px;
+                font-weight: bold
+            }
+
+            table p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+        iframe {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">LICENSE PLATE OCR</a>
+            <div class="login">
+                <button><i class="fas fa-lock"></i> Login </button>
+            </div>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <a>Lòng Dạ Con Bò</a>. All rights reserved.</p>
+    </footer>
+    <table>
+        <tr>
+            <td>
+                <h3 style="vertical-align: top ;">ABOUT PROJECT</h3>
+                <p>
+                    This is a project - where our OCR system can detect the plate number of license for you.
+
+                </p>
+            </td>
+            <td>
+                <h3 style="vertical-align: top ;">FOLLOW US</h3>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FReviewdanang24h&tabs=timeline&width=500&height=700&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true" width="320" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </td>
+        </tr>
+    </table>
+    <script src="" async defer></script>
+</body>
+</html>

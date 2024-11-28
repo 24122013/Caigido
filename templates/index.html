@@ -1,0 +1,52 @@
+﻿{% extends 'layout.html' %}
+{% block body %}
+<!-- Upload Section -->
+<div class="container-upload">
+    <br />
+    <h2>Upload Your Image</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input type="file" class="form-control" name="image_name" required />
+        </div>
+        <button style="background-color: #ffc2d1; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;" type="submit" class="btn btn-primary">
+            Upload
+        </button>
+    </form>
+</div>
+
+{% if upload %}
+<div class="container">
+    <br />
+    <table>
+        <tr>
+            <td>
+                <img class="rounded float-left img-fluid"
+                     src="/static/upload/{{ upload_image }}"
+                     alt="" />
+            </td>
+            <td>
+                <img class="rounded float-right img-fluid"
+                     src="/static/predict/{{ upload_image }}"
+                     alt="" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table style="border: solid 1px #ccc; width: 100%">
+        <tr>
+            <th style="border-bottom: solid 2px #0096c7;">CROPPED LICENSE PLATE IMAGE</th>
+            <th style="border-bottom: solid 2px #0096c7;">TEXT</th>
+        </tr>
+        <tr>
+            <td style="border-right: solid 1px #ccc; padding: 15px;">
+                <img class="img-fluid" src="/static/roi/{{ upload_image }}" alt="" />
+            </td>
+            <td style="background-color: #c1dce0; padding: 15px;">
+                <h1 class="display-8">{{ text }}</h1>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% endif %}
+{% endblock %}
